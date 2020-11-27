@@ -1,0 +1,35 @@
+.videoCard {
+  color: white;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  transition: transform 100ms;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.videoCard h3 {
+  padding-top: 10px;
+}
+
+.videoCard:hover {
+  transform: scale(1.09);
+}
+
+.videoCard img {
+  height: 300px;
+  object-fit: contain;
+  width: 400px;
+}
+
+.videoCard::-webkit-scrollbar {
+  display: none;
+  overflow-x: hidden;
+}
+
+/*Hide scrollbar for IE Edge and Firefox */
+
+.videoCard {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
