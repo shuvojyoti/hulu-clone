@@ -1,9 +1,8 @@
-/* eslint-disable import/no-anonymous-default-export */
+
 const API_KEY = "f7b5de4cead73248cda6038258344fe5";
 
 export default {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
-  // eslint-disable-next-line no-dupe-keys
   fetchTopRated: `/movie/top_rated/week?api_key=${API_KEY}&language=en-US`,
   fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
   fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
