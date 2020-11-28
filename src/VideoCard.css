@@ -4,11 +4,19 @@
   height: 400px;
   transition: transform 100ms;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .videoCard h3 {
   padding-top: 10px;
+}
+
+.videoCard_stats {
+  display: none;
+}
+
+.videoCard:hover .videoCard_stats {
+  display: inline;
 }
 
 .videoCard:hover {

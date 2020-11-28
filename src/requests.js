@@ -1,6 +1,6 @@
-
 const API_KEY = "f7b5de4cead73248cda6038258344fe5";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   fetchTopRated: `/movie/top_rated/week?api_key=${API_KEY}&language=en-US`,
