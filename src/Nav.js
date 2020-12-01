@@ -8,9 +8,7 @@ function Nav({ setSelectedOption }) {
       <h3 onClick={() => setSelectedOption(requests.fetchTrending)}>
         Trending
       </h3>
-      <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>
-        Top Rated
-      </h3>
+      <h3 onClick={() => setSelectedOption(requests.fetchTopRated)}>War</h3>
       <h3 onClick={() => setSelectedOption(requests.fetchActionMovies)}>
         Action
       </h3>
@@ -30,7 +28,7 @@ function Nav({ setSelectedOption }) {
         Sci-fi
       </h3>
       <h3 onClick={() => setSelectedOption(requests.fetchWesternMovies)}>
-        Western
+        TV Movies
       </h3>
       <h3 onClick={() => setSelectedOption(requests.fetchAnimationMovies)}>
         Animation

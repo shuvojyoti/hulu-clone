@@ -1,17 +1,17 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./VideoCard.css";
 import TextTruncate from "react-text-truncate";
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function VideoCard({ movie }) {
+const VideoCard = forwardRef(({ movie }, ref) => {
   return (
-    <div className="videoCard">
+    <div ref={ref} className="videoCard">
       <img
         src={`${base_url}${movie.backdrop_path || movie.poster_path}`}
         alt="default"
       ></img>
       <TextTruncate
-        line={1}
+        line={2}
         element="p"
         truncateText="..."
         text={movie.overview}
@@ -23,6 +23,6 @@ function VideoCard({ movie }) {
       </p>
     </div>
   );
-}
+});
 
 export default VideoCard;

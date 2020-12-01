@@ -7,12 +7,17 @@
   margin-bottom: 10px;
 }
 
+.videoCard p {
+  width: 300px;
+}
+
 .videoCard h3 {
   padding-top: 10px;
 }
 
 .videoCard_stats {
   display: none;
+  width: 350px;
 }
 
 .videoCard:hover .videoCard_stats {
